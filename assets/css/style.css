@@ -1,0 +1,24 @@
+
+:root{
+  --background-color: #161B21;
+  --primary-color: #1D232C;
+  --secondary-color: #3B4758
+  --tertiary-color: ;
+  --neutral-color: #fff;
+
+  --text-primary-color: #EEF0F4;
+  --text-secondary-color: #586A84;
+  --text-tertiary-color: #BAC4D1;
+
+  --primary-button-color: #319DFF;
+  --secondary-button-color: #7D8FA9;
+  --success-button-color: #10D096
+  --danger-button-color: #FF316A;
+  --warning-button-color: #FFAA04;
+  --info-button-color: #129199;
+  --light-button-color: #EEF0F4;
+  --dark-button-color: #3B4758;
+
+}
+
+
