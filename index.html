@@ -4,34 +4,66 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" type="image/png" href="assets/logo.ico" />
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0"
+    />
+    <link rel="stylesheet" href="assets/css/config.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Developer Space</title>
   </head>
   <body>
-    <header>
-      <img src="assets/icons/" alt="Menu hambúrguer" />
-      <input type="text" />
-      <select name="" id="">
-        <option value=""><img src="" alt="Bandeira" /> Portugues</option>
-      </select>
-      <img src="" alt="" />
-      <img src="" alt="Notificações" />
-      <div>dark mode</div>
-      <img src="" alt="Imagem de perfil" />
-    </header>
-    <aside>
-      <div>
-        <img src="assets/logo.ico" alt="" />
-        <span>DevSpace</span>
+    <div class="container">
+      <aside class="border">
+        <div class="logo">
+          <img class="image-logo" src="assets/images/logo-removebg-preview.png" alt="" id="logo" />
+          <span class="text-logo">DevSpace</span>
+        </div>
+
+        <nav>
+          <a href=""><span class="material-symbols-rounded">dashboard</span>Dashboard</a>
+          <a href=""><span class="material-symbols-rounded">calendar_month</span>Calendário</a>
+          <a href=""><span class="material-symbols-rounded">forum</span>Chat</a>
+          <a href=""><span class="material-symbols-rounded">task_alt</span>Tarefas</a>
+          <a href=""><span class="material-symbols-rounded">glass_cup</span>Outros</a>
+        </nav>
+      </aside>
+
+      <div class="main-container">
+        <header class="border">
+          <div class="search">
+            <span class="material-symbols-rounded">menu</span>
+            <div class="search-input">
+              <span class="material-symbols-rounded">search</span>
+              <span>Pesquise aqui...</span>
+              <input type="text" placeholder="" />
+            </div>
+          </div>
+
+          <div class="user-info">
+            <div class="language" name="" id="">
+              <img src="assets/images/brasil.png" alt="" />
+              <span value="">Português</span>
+              <span class="material-symbols-rounded">keyboard_arrow_down</span>
+            </div>
+            <span class="material-symbols-rounded">apps</span>
+            <span class="material-symbols-rounded">notifications_unread</span>
+            <div class="mode">
+              <span class="material-symbols-rounded active-mode">light_mode</span>
+              <span class="material-symbols-rounded">dark_mode</span>
+            </div>
+            <img class="avatar" src="assets/images/avatar.png" alt="Imagem de perfil" />
+          </div>
+        </header>
+
+        <main></main>
       </div>
-      <nav>
-        <a href=""><img src="" alt="" />Dashboard</a>
-        <a href=""><img src="" alt="" />Calendário</a>
-        <a href=""><img src="" alt="" />Chat</a>
-        <a href=""><img src="" alt="" />Tarefas</a>
-        <a href=""><img src="" alt="" />Outros</a>
-      </nav>
-    </aside>
-    <main></main>
+    </div>
   </body>
 </html>
