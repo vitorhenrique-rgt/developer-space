@@ -1,149 +1,144 @@
-
-
-
-body{
-  background-color: var(--background-color);
+body {
+  background-color: var(--gray-000);
 }
 
-
-.container{
+.container {
   width: 100%;
   display: flex;
   padding: 20px;
 }
 
-
-aside{
+aside {
   width: 200px;
   height: calc(100dvh - 40px);
   padding: 16px;
   margin-right: 20px;
-  background-color: var(--primary-color);
+  background-color: var(--gray-900);
 }
-.logo{
+.logo {
   padding-top: 4px;
   display: flex;
   align-items: center;
+  gap: 5px;
 }
-.image-logo{
-  margin-left: -6px;
-  width: 50px;
+.image-logo {
+  width: 30px;
 }
 
-.text-logo{
+.text-logo {
   font-size: 24px;
   font-weight: 900;
 }
-nav{
+nav {
   padding-top: 25px;
 }
-nav > a{
+nav > a {
   width: 100%;
   height: 48px;
   margin: 2px;
   padding: 16px;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 16px;
   text-decoration: none;
   border-radius: 6px;
-  color:var(--text-secondary-color);
+  color: var(--gray-700);
   display: flex;
   justify-content: start;
   align-items: center;
-  gap:  10px;
+  gap: 10px;
 }
 
-nav > a > span{
-  color: var(--text-secondary-color);
+nav > a > span {
+  color: var(--gray-700);
   font-size: 10px;
 }
 
-.main-container{
+nav > a > .text{
+  font-size: 14px;
+}
+
+.main-container {
   width: 100%;
 }
 
-
-header{
+header {
   width: 100%;
   padding: 20px 24px;
-  background-color: var(--primary-color);
+  background-color: var(--gray-900);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.search{
+.search {
   display: flex;
   align-items: center;
   gap: 30px;
 }
-.search > span{
-  color: var(--text-secondary-color);
-} 
-.search-input{
+.search > span {
+  color: var(--gray-700);
+}
+.search-input {
   display: flex;
   align-items: center;
 }
-.search-input span{
+.search-input span {
   position: absolute;
   padding-left: 15px;
   font-size: 20px;
-  color: var(--text-tertiary-color);
+  color: var(--gray-500);
 }
-.search-input span:nth-child(2){
+.search-input span:nth-child(2) {
   padding-left: 40px;
   font-size: 14px;
 }
-.search-input input{
+.search-input input {
   width: 260px;
   height: 40px;
   padding: 10px;
   font-size: 14px;
-  color: var(--text-tertiary-color);
+  color: var(--gray-500);
   outline: none;
   border: none;
   border-radius: 6px;
-  background: var(--secondary-color);
+  background: var(--gray-800);
 }
 
-.user-info{
+.user-info {
   display: flex;
   align-items: center;
   gap: 14px;
 }
-.user-info span{
-  color: var(--text-secondary-color);
+.user-info span {
+  color: var(--gray-700);
 }
 
-.user-info .language{
+.user-info .language {
   display: flex;
   align-items: center;
-  gap:  8px;
+  gap: 8px;
 }
-.user-info .mode{
+.user-info .switch-mode {
   width: 44px;
   height: 24px;
   padding: 2px;
   display: flex;
   align-items: center;
-  background-color: var(--secondary-button-color);
+  background-color: var(--gray-600);
   gap: 2px;
-  border-radius:  15px;
+  border-radius: 15px;
 }
 
-.user-info .mode > span{
+.user-info .switch-mode > span {
   color: #fff;
   padding: 2xp;
   font-size: 18px;
 }
-.user-info .mode .active-mode{
-  background-color: var(--secondary-color);
+.user-info .switch-mode .active-mode {
+  background-color: var(--gray-800);
   border-radius: 50%;
 }
 
-
-.user-info .avatar{
+.user-info .avatar {
   width: 40px;
   border-radius: 50px;
 }
