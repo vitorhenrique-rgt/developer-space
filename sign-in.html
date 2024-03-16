@@ -14,6 +14,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0"
     />
+    <link rel="stylesheet" href="assets/css/color-scheme.css" />
     <link rel="stylesheet" href="assets/css/config.css" />
     <link rel="stylesheet" href="assets/css/login.css" />
     <title>Developer Space | Sing In</title>
@@ -21,11 +22,15 @@
   <body>
     <main>
       <div class="container-login border">
-        <h1>Sign In</h1>
+        <h2>Sign In</h2>
         <form class="form-login" action="index.html">
           <div class="social-login">
-            <button><img src="assets/images/google-logo.png" alt="Logo Google" />Sing In com Google</button>
-            <button><img src="assets/images/github-logo.png" alt="Logo GitHub" />Sing In com GitHub</button>
+            <button class="btn btn-sign-with">
+              <img src="assets/images/google-logo.png" alt="Logo Google" />Sing In com Google
+            </button>
+            <button class="btn btn-sign-with">
+              <img src="assets/images/github-logo.png" alt="Logo GitHub" />Sing In com GitHub
+            </button>
           </div>
           <div class="separator">
             <div class="line"></div>
@@ -33,21 +38,23 @@
             <div class="line"></div>
           </div>
           <div class="input-login">
-            <label for="email">E-mail:</label>
-            <input id="email" type="text" placeholder="Digite seu e-mail" />
-            <label for="password">Senha:</label>
-            <input id="password" type="password" placeholder="Digite sua senha" />
+            <label class="label" for="email">E-mail:</label>
+            <input class="basic-input" id="email" type="text" placeholder="Digite seu e-mail" />
+            <label class="label" for="password">Senha:</label>
+            <input class="basic-input id="password" type="password" placeholder="Digite sua senha" />
           </div>
           <div class="remember-forgot">
             <div class="remember-me">
               <input type="checkbox" name="remember-me" id="remember-me" />
-              <label for="remember-me">Lembrar senha</label>
+              <label class="text" for="remember-me">Lembrar senha</label>
             </div>
-            <a class="forgot-password" href="">Esqueceu a senha?</a>
+            <a class="small-link-primary" href="">Esqueceu a senha?</a>
           </div>
-          <button class="bnt-singin">Sing in</button>
+          <button class="btn btn-large primary">Sing in</button>
         </form>
-        <p class="create-account">Não tem uma conta? <a href="sign-up.html">Crie agora</a></p>
+        <p class="text create-account">
+          Não tem uma conta? <a class="small-link-primary" href="sign-up.html">Crie agora</a>
+        </p>
       </div>
     </main>
   </body>
