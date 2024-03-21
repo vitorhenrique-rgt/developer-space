@@ -17,12 +17,12 @@
     <link rel="stylesheet" href="assets/css/color-scheme.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/auth.css" />
-    <title>Developer Space | Sing In</title>
+    <title>Developer Space | Sign Up</title>
   </head>
   <body>
     <main>
       <div class="container-auth border">
-        <h2>Sign In</h2>
+        <h2>Sing Up</h2>
         <form class="form-login" action="index.html">
           <div class="social-login">
             <button class="btn btn-sign-with">
@@ -45,9 +45,16 @@
             <div>
               <label class="label" for="password">Senha:</label>
               <div class="div-icon">
+                <span class="material-symbols-rounded icon-right"> visibility_off </span>
+                <input class="basic-input" id="password" type="password" placeholder="Digite sua senha" />
+              </div>
+            </div>
+            <div>
+              <label class="label" for="password">Confirmar senha:</label>
+              <div class="div-icon">
                 <input
                   class="basic-input input-icon-right"
-                  id="password"
+                  id="confirm-password"
                   type="password"
                   placeholder="Digite sua senha"
                 />
@@ -55,18 +62,24 @@
               </div>
             </div>
           </div>
+          <div class="pass-strenght">
+            <div class="pass-strenght-item"></div>
+            <div class="pass-strenght-item"></div>
+            <div class="pass-strenght-item"></div>
+            <div class="pass-strenght-item"></div>
+          </div>
           <div class="remember-forgot">
             <div class="remember-me">
               <input type="checkbox" name="remember-me" id="remember-me" />
-              <label class="text" for="remember-me">Lembrar senha</label>
+              <label class="text" for="remember-me"
+                >Aceito os <a class="small-link-primary" href="">Termos de uso</a> e
+                <a class="small-link-primary" href="">Privacidade</a></label
+              >
             </div>
-            <a class="small-link-primary" href="forgot-password.html">Esqueceu a senha?</a>
           </div>
-          <button class="btn btn-large primary">Sing in</button>
+          <button class="btn btn-large primary">Sign Up</button>
         </form>
-        <p class="text create-account">
-          Não tem uma conta? <a class="small-link-primary" href="sign-up.html">Crie agora</a>
-        </p>
+        <p class="text create-account">Tem uma conta? <a class="small-link-primary" href="sign-in.html">Entre</a></p>
       </div>
     </main>
   </body>
