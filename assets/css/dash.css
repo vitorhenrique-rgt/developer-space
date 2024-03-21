@@ -9,15 +9,22 @@ body {
 }
 
 aside {
-  width: 200px;
+  max-width: 200px;
   height: calc(100dvh - 40px);
   padding: 16px;
   margin-right: 20px;
   background-color: var(--gray-900);
 }
+.none > nav > a > span:nth-child(2) {
+  display: none;
+}
+.none > .logo > span {
+  display: none;
+}
 .logo {
   padding-top: 4px;
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 5px;
 }
@@ -55,9 +62,6 @@ nav > a > span {
 nav > a > .text {
   font-size: 14px;
 }
-.none > a > span:nth-child(2) {
-  display: none;
-}
 
 .main-container {
   width: 100%;
@@ -77,7 +81,16 @@ header {
   align-items: center;
   gap: 30px;
 }
-
+.search > span {
+  color: var(--gray-700);
+}
+.search .div-icon {
+  max-width: 400px;
+  flex-grow: 1;
+}
+#burger_menu {
+  cursor: pointer;
+}
 .user-info {
   width: 100%;
   display: flex;
