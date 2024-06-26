@@ -9,7 +9,7 @@ body {
 }
 
 aside {
-  width: 200px;
+  max-width: 200px;
   height: calc(100dvh - 40px);
   padding: 16px;
   margin-right: 20px;
@@ -19,6 +19,7 @@ aside {
   padding-top: 4px;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 5px;
 }
 .image-logo {
@@ -76,6 +77,14 @@ header {
   display: flex;
   align-items: center;
   gap: 30px;
+}
+
+.search > span{
+  cursor: pointer;
+}
+
+.search > div >input{
+  max-width: 300px;
 }
 
 .user-info {

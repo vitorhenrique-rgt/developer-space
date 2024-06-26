@@ -103,14 +103,14 @@ line-height: 12px;
 
 
 
-.pass-strenght{
+.pass-strength{
   width: 100%;
   height: 24px;
   display: flex;
   align-items: center;
   gap:  5px;
 }
-.pass-strenght-item{
+.pass-strength-item{
   width: 100%;
   height: 4px;
   border-radius: 2px;
@@ -118,7 +118,18 @@ line-height: 12px;
 }
 
 /*INPUT*/
+.basic-input{
+  width: 100%;
+  height: 40px;
+  padding: 12px 10px 12px 20px;
+  background: var(--gray-800) ;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  margin: 5px 0;
+}
 .div-icon{
+  width: 100%;
   position: relative;
   display: flex;
   align-items: center;
@@ -129,6 +140,7 @@ line-height: 12px;
   color: var(--gray-500);
   cursor: pointer;
 }
+
 .input-icon-right{
   padding-right: 40px;
 }
@@ -142,25 +154,14 @@ line-height: 12px;
   padding-left: 40px;
 }
 
-input{
-  width: 100%;
-  height: 40px;
-  padding: 12px 10px 12px 20px;
-  background: var(--gray-800) ;
-  border-radius: 6px;
-  border: none;
-  outline: none;
-  margin: 5px 0;
-}
-
-input::placeholder {
+.basic-input::placeholder {
   color: var(--text-ternary-color);
   opacity: 0.4;
   font-size: 14px;
   line-height: 16px;
 }
 
-input:focus{
+.basic-input:focus{
   border: solid 1px var(--primary-600);
 }
 
