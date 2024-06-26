@@ -15,9 +15,16 @@ aside {
   margin-right: 20px;
   background-color: var(--gray-900);
 }
+.none > nav > a > span:nth-child(2) {
+  display: none;
+}
+.none > .logo > span {
+  display: none;
+}
 .logo {
   padding-top: 4px;
   display: flex;
+  justify-content: center;
   align-items: center;
   justify-content: center;
   gap: 5px;
@@ -55,9 +62,6 @@ nav > a > span {
 
 nav > a > .text {
   font-size: 14px;
-}
-.none > a > span:nth-child(2) {
-  display: none;
 }
 
 .main-container {
