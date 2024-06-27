@@ -68,54 +68,32 @@ nav > a > .text {
   width: 100%;
 }
 
-header {
-  width: 100%;
-  padding: 20px 24px;
-  background-color: var(--gray-900);
-  display: flex;
-  align-items: center;
-}
 
-.search {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
+
+
+
+
+
 
 .search > span{
   cursor: pointer;
 }
 
 .search > div >input{
-  max-width: 300px;
+  
 }
 
 .user-info {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 14px;
 }
 .user-info span {
   color: var(--gray-700);
 }
 
 .user-info .language {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  
 }
 .user-info .switch-mode {
-  width: 44px;
-  height: 24px;
-  padding: 2px;
-  display: flex;
-  align-items: center;
-  background-color: var(--gray-600);
-  gap: 2px;
-  border-radius: 15px;
+
 }
 
 .user-info .switch-mode > span {
@@ -129,6 +107,5 @@ header {
 }
 
 .user-info .avatar {
-  width: 40px;
-  border-radius: 50px;
+ 
 }
