@@ -1,9 +1,17 @@
-import Header from  '../../components/Header'
+import Header from "../../components/Header"
+import Navigation from "../../components/Navigation"
+import { HomeContainer, HomeContent, Div } from "./style"
 
-function Home(){
-    return (<Header></Header>)
+function Home() {
+  return (
+    <HomeContainer>
+      <Navigation />
+      <Div>
+        <Header />
+        <HomeContent></HomeContent>
+      </Div>
+    </HomeContainer>
+  )
 }
 
-export default Home
-
-
+export default Home;

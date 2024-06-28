@@ -1,8 +1,9 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const HeaderContainer = styled.div`
   width: 100%;
   padding: 20px 24px;
+  border-radius: 12px;
   background-color: #1d232c; //gray-900
   display: flex;
   align-items: center;

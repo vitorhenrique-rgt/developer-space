@@ -19,17 +19,6 @@
   --dark-button-color: #3B4758;
 
 }
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-  color: var(--gray-100);
-}
-
-.border{
-  border-radius: 12px;
-}
 
 /*TEXT*/
 h1{
