@@ -4,20 +4,23 @@ import {
 	LanguageContainer,
 	ProfileImage,
 	SearchContainer,
-	SearchInput,
 	SwitchMode,
 	UserInfoContainer,
 } from "./style";
 import Flag from "../../assets/brasil.png";
 import Profile from "../../assets/avatar.png";
+import Input from "../Input";
 
 function Header() {
 	return (
 		<HeaderContainer>
 			<SearchContainer>
 				<span className="material-symbols-rounded">menu</span>
-				<SearchInput placeholder="Pesquisar..."></SearchInput>
-				<span className="material-symbols-rounded">search</span>
+				<Input
+					inputType={"search"}
+					side={"right"}
+					info={"Pesquisar..."}
+				></Input>
 			</SearchContainer>
 			<UserInfoContainer>
 				<LanguageContainer>
