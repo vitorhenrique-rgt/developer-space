@@ -17,6 +17,7 @@ function Header() {
 			<SearchContainer>
 				<span className="material-symbols-rounded">menu</span>
 				<Input
+					iconType={"search"}
 					inputType={"search"}
 					side={"right"}
 					info={"Pesquisar..."}
