@@ -5,12 +5,12 @@ export const HeaderContainer = styled.div`
 	height: 80px;
 	padding: 20px 24px;
 	border-radius: 12px;
-	background-color: #1d232c; //gray-900
+	background-color: ${(props) => props.theme.colors.gray900};
 	display: flex;
 	align-items: center;
 
 	span {
-		color: #586a84; //gray-700
+		color: ${(props) => props.theme.colors.gray700};
 	}
 	.material-symbols-rounded {
 		cursor: pointer;
@@ -29,21 +29,21 @@ export const SearchInput = styled.input`
 	max-width: 300px;
 	height: 40px;
 	padding: 12px 10px 12px 20px;
-	background: #3b4758; //grey-800
+	background: ${(props) => props.theme.colors.gray800};
 	border-radius: 6px;
 	border: none;
 	outline: none;
 	margin: 5px 0;
 
 	&::placeholder {
-		color: #bac4d1; //text-ternary-color
+		color: ${(props) => props.theme.colors.gray400};
 		opacity: 0.4;
 		font-size: 14px;
 		line-height: 16px;
 	}
 
 	&:focus {
-		border: solid 1px #319dff; //primary-600
+		border: solid 1px ${(props) => props.theme.colors.primary600};
 	}
 `;
 
@@ -77,7 +77,7 @@ export const SwitchMode = styled.div`
 	display: flex;
 	padding: 1px;
 	align-items: center;
-	background-color: #7d8fa9; //gray-600
+	background-color: ${(props) => props.theme.colors.gray600};
 	gap: 2px;
 	border-radius: 15px;
 
@@ -87,7 +87,7 @@ export const SwitchMode = styled.div`
 		color: #fff;
 	}
 	span:nth-child(2) {
-		background-color: #3b4758; //gray-800
+		background-color: ${(props) => props.theme.colors.gray800};
 	}
 `;
 

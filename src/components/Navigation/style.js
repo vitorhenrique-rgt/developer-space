@@ -6,7 +6,7 @@ export const NavContainer = styled.aside`
 	padding: 16px;
 	border-radius: 12px;
 	margin-right: 20px;
-	background-color: #1d232c; //gray-900
+	background-color: ${(props) => props.theme.colors.gray900};
 `;
 export const LogoContainer = styled.div`
 	padding: 10px 10px 25px 10px;
@@ -30,7 +30,7 @@ export const NavListItem = styled.a`
 	line-height: 16px;
 	text-decoration: none;
 	border-radius: 6px;
-	color: #586a84; //gray-700
+	color: ${(props) => props.theme.colors.gray700};
 	display: flex;
 	justify-content: start;
 	align-items: center;
@@ -38,7 +38,7 @@ export const NavListItem = styled.a`
 
 	span {
 		font-size: 24px;
-		color: #586a84;
+		color: ${(props) => props.theme.colors.gray700};
 	}
 
 	span:nth-child(2) {

@@ -10,7 +10,7 @@ export const SeparatorContainer = styled.div`
 	& div{
 		width: 100%;
 		height: 1px;
-		background-color: #EEF0F4; //gray-100
+		background-color: ${(props) => props.theme.colors.gray100};
 	}
 
 	& span{
@@ -18,6 +18,6 @@ export const SeparatorContainer = styled.div`
 		font-weight: 400;
 		font-size: 14px;
 		line-height: 16px;
-		color: #586A84; //grey-700
+		color: ${(props) => props.theme.colors.gray700};
 	}
 `

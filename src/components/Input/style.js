@@ -35,19 +35,19 @@ export const InputContent = styled.input`
 					padding: 12px 20px 12px 40px;
 				`
 			: `padding: 12px 20px`};
-	background: #3b4758; //grey-800
+	background: ${(props) => props.theme.colors.gray800};
 	border-radius: 6px;
 	border: none;
 	outline: none;
 
 	&::placeholder {
-		color: #bac4d1; //text-ternary-color
+		color: ${(props) => props.theme.colors.gray400};
 		opacity: 0.4;
 		font-size: 14px;
 		line-height: 16px;
 	}
 
 	&:focus {
-		border: solid 1px #319dff; //primary-600
+		border: solid 1px ${(props) => props.theme.colors.primary600};
 	}
 `;
