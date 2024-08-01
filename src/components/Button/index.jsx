@@ -1,9 +1,10 @@
-import { BtnPrimary } from "./style";
+import '../../../index.css'
+import { Button as Btn } from "./style";
 
-const PrimaryButton = ({children})=>{
+const Button = ({size, color, children})=>{
 	return(
-		<BtnPrimary>{children}</BtnPrimary>
+		<Btn size={size} color={color}>{children}</Btn>
 	)
 }
 
-export default PrimaryButton
+export default Button
