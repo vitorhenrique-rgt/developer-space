@@ -13,5 +13,5 @@ export const HomeContent = styled.div`
   height: calc(100vh - 150px);
   border-radius: 12px;
   margin-top: 20px;
-  background-color: #1d232c; //gray-900
+  background-color: ${(props) => props.theme.colors.gray900};
 `;

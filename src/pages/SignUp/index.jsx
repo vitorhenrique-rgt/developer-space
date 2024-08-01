@@ -4,7 +4,7 @@ import Separator from '../../components/Separator'
 import Input from '../../components/Input'
 import LogoGoogle from '../../assets/google-logo.png'
 import Link from '../../components/Link'
-import PrimaryButton from '../../components/Button'
+import Button from '../../components/Button'
 
 const AuthSignUp =  () =>{
 	const login = useGoogleLogin({
@@ -24,26 +24,26 @@ const AuthSignUp =  () =>{
 					<div>
 						<Label>Email</Label>
 						<Input
-							inputType={"email"}
-							info={"email@email.com"}
+							type={"email"}
+							placeholder={"email@email.com"}
 						></Input>
 					</div>
 					<div>
-						<Label>Senha</Label>
-						<Input
-							iconType={"visibility_off"}
-							inputType={"password"}
-							iconSide={"right"}
-							info={"Digite uma senha forte..."}
+						<Label htmlFor='password'>Senha</Label>
+						<Input name='password'
+							icon={"visibility_off"}
+							type={"password"}
+							side={"right"}
+							placeholder={"Digite uma senha forte..."}
 						></Input>
 					</div>
 					<div>
 						<Label>Confirme a senha</Label>
 						<Input
-							iconType={"visibility_off"}
-							inputType={"password"}
-							iconSide={"right"}
-							info={"Digite a senha novamente..."}
+							icon={"visibility_off"}
+							type={"password"}
+							side={"right"}
+							placeholder={"Digite a senha novamente..."}
 						></Input>
 					</div>
 					<PassStrength>
@@ -57,7 +57,7 @@ const AuthSignUp =  () =>{
 						<label htmlFor="agree">Concordo com os <Link>Termos de Privacidade</Link></label>
 					</PrivacyTerms>
 				</AuthInputs>
-				<PrimaryButton>Sign In</PrimaryButton>
+				<Button color='primary' size='large'>Sign In</Button>
 				<AlreadyHave>
 					<p>Tem uma conta? <Link>Entre</Link></p>
 					</AlreadyHave>

@@ -6,3 +6,5 @@ export const LinkContent = styled.a`
 	line-height: 16px;
   color: ${(props) => props.theme.colors.primary600};
 `
+/*TODO: add hover
+*/

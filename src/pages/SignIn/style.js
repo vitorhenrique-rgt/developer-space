@@ -18,7 +18,7 @@ export const AuthContent = styled.div`
 	justify-content:center;
 	gap: 20px;
 	border-radius:6px;
-	background-color: #1D232C; //gray-900
+	background-color: ${(props) => props.theme.colors.gray900};
 `
 export const Title = styled.h1`
 font-weight: 700;
@@ -35,18 +35,18 @@ export const LoginGoogle = styled.button`
   cursor: pointer;
   border-radius: 6px;
   border: none;
-  background: #1D232C; //gray-900
-  border: 1px solid #7D8FA9;//gray-600
+  background: ${(props) => props.theme.colors.gray900};
+  border: 1px ${(props) => props.theme.colors.gray600};
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  color: #EEF0F4;//gray-100
+  color: ${(props) => props.theme.colors.gray100};
 
 	& img{
 		width: 30px;
 	}
 	&:hover{
-  background: #3B4758; //grey-800
+  background: ${(props) => props.theme.colors.gray800};
 	}
 `
 export const AuthInputs = styled.label`
@@ -92,7 +92,7 @@ export const RememberMe = styled.div`
 		font-weight: 400;
 		font-size: 14px;
 		line-height: 16px;
-		color: #EEF0F4;
+		color: ${(props) => props.theme.colors.gray100};
 		cursor:pointer;
 	}
 `
