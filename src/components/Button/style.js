@@ -16,10 +16,11 @@ export const Button = w.button(
       small: 'text-sm h-8',
 			medium:'text-sm h-10',
       large: 'text-base font-medium h-12',
-    },
-  },
-  defaultVariants: {
-    color: 'primary',
-    size: 'small',
-  },
-})
+    }
+	},
+		defaultVariants: {
+			color: 'primary',
+			size: 'small',
+		}
+	}
+)
