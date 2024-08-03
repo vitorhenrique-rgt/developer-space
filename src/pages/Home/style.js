@@ -1,17 +1,13 @@
-import styled from "styled-components";
+import w from "windstitch";
 
-export const HomeContainer = styled.div`
-  width: 100%;
-  display: flex;
-  padding: 20px;
-`;
-export const Div = styled.div`
-  width: 100%;
-  height: 100%;
-`;
-export const HomeContent = styled.div`
-  height: calc(100vh - 150px);
-  border-radius: 12px;
-  margin-top: 20px;
-  background-color: ${(props) => props.theme.colors.gray900};
-`;
+export const HomeContainer = w.div(
+	'w-full flex flex-row p-5'
+)
+
+export const Div = w.div(
+	'w-full h-full'
+)
+
+export const HomeContent = w.div(
+	'h-[calc(100vh-8.7rem)] mt-5 bg-gray-900 rounded-xl'
+)
