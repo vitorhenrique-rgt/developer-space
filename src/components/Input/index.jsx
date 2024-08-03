@@ -1,11 +1,8 @@
-import { Input as Ipt, Icon } from "./style";
+import { Input as Ipt} from "./style";
 
-function Input({placeholder, icon, side, type}) {
+function Input({placeholder, side, type}) {
 	return (
-		<div className='relative'>
 			<Ipt type={type} placeholder={placeholder} side ={side}></Ipt>
-			<Icon className="material-symbols-rounded" side ={side}>{icon}</Icon>
-		</div>
 	);
 }
 
