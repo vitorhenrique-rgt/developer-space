@@ -1,23 +1,12 @@
-import styled from "styled-components"
+import w from "windstitch"
 
-export const SeparatorContainer = styled.div`
-	width: 100%;
-	height: 100%;
-	display:flex;
-	justify-content:center;
-	align-items:center;
+export const SeparatorContainer = w.div(
+	'w-full h-full flex justify-center items-center'
+)
+export const Line = w.div(
+	'w-full h-0.5 flex justify-center items-center bg-gray-100'
+)
 
-	& div{
-		width: 100%;
-		height: 1px;
-		background-color: ${(props) => props.theme.colors.gray100};
-	}
-
-	& span{
-		padding: 0 10px;
-		font-weight: 400;
-		font-size: 14px;
-		line-height: 16px;
-		color: ${(props) => props.theme.colors.gray700};
-	}
-`
+export const Span = w.span(
+	'px-3 py-0 text-sm text-gray-700'
+)

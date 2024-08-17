@@ -11,8 +11,11 @@ import Flag from "../../assets/brasil.png";
 import Profile from "../../assets/avatar.png";
 import Input from "../Input";
 import Icon from "../Icon";
+import { useUser } from "../../context/UserContext";
 
 function Header() {
+	const { user } = useUser();
+	console.log(user)
 	return (
 		<HeaderContainer>
 			<SearchContainer>

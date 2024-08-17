@@ -17,7 +17,7 @@ export const LanguageContainer = w.div(
 )
 
 export const FlagImage = w.img(
-	'w-8 w-8'
+	'w-8 h-8'
 )
 
 export const SwitchMode = w.div(
