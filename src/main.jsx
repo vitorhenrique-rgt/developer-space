@@ -8,21 +8,20 @@ import Login from "./pages/Login";
 import CreateAccount from './pages/CreateAccount';
 import { GlobalStyle } from "./styles/globalStyles";
 import { ThemeProvider } from "styled-components";
-import { UserProvider } from "./context/UserContext";
+import ForgotPassword from "./pages/ForgotPassword";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
 	<React.StrictMode>
 		<ThemeProvider theme={theme}>
 			<GlobalStyle />
-			<UserProvider>
 				<Router>
 					<Routes>
 						<Route path="/" element={<Login/>} />
 						<Route path="/create-account" element={<CreateAccount />} />
 						<Route path="/home" element={<Home />} />
+						<Route path="//forgot-password" element={<ForgotPassword />} />
 					</Routes>
 				</Router>
-			</UserProvider>
 		</ThemeProvider>
   </React.StrictMode>,
 );
