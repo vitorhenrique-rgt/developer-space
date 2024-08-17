@@ -18,7 +18,7 @@ export const IconElement = w.span(
 			color:{
 				default:'text-gray-400',
 				while:'text-white',
-				gray:'text-gray-700',
+				gray:'text-gray-700 hover:text-gray-100',
 				blue:'text-blue-700',
 				red:'text-red-700',
 				green:'text-green-700'
@@ -30,4 +30,3 @@ export const IconElement = w.span(
 		}
 	}
 )
-//TODO variantes de cores dos ícones
