@@ -1,8 +1,5 @@
-import styled from "styled-components";
+import w from "windstitch";
 
-export const LinkContent = styled.a`
-	text-decoration: none;
-	font-size: 14px;
-	line-height: 16px;
-  color: ${(props) => props.theme.colors.primary600};
-`
+export const Link = w.span(
+	'text-sm text-blue-600 hover:text-blue-700 hover:underline'
+)

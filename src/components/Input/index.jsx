@@ -1,11 +1,8 @@
-import { ContainerInput, InputContent } from "./style";
+import { Input as Ipt} from "./style";
 
-function Input(props) {
+function Input({placeholder, side, type}) {
 	return (
-		<ContainerInput $iconSide={props.iconSide}>
-			<InputContent type={props.inputType} $iconSide={props.iconSide} placeholder={props.info}></InputContent>
-			<span className="material-symbols-rounded">{props.iconType}</span>
-		</ContainerInput>
+			<Ipt type={type} placeholder={placeholder} side ={side}></Ipt>
 	);
 }
 

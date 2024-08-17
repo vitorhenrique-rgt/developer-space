@@ -1,47 +1,21 @@
-import styled from "styled-components";
+import w from "windstitch";
 
-export const NavContainer = styled.aside`
-	max-width: fit-content;
-	height: calc(100dvh - 40px);
-	padding: 16px;
-	border-radius: 12px;
-	margin-right: 20px;
-	background-color: ${(props) => props.theme.colors.gray900};
-`;
-export const LogoContainer = styled.div`
-	padding: 10px 10px 25px 10px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 10px;
+export const NavContainer = w.aside(
+	'max-w-fit h-[calc(100vh - 40px)] bg-gray-900 p-4 rounded-xl mr-5'
+)
 
-	span {
-		max-width: fit-content;
-		font-size: 18px;
-		font-weight: 900;
-	}
-`;
+export const LogoContainer = w.div(
+	'flex justify-center items-center gap-2 mb-7',
+)
 
-export const NavListItem = styled.a`
-	width: 100%;
-	height: 48px;
-	margin: 2px;
-	padding: 16px;
-	line-height: 16px;
-	text-decoration: none;
-	border-radius: 6px;
-	color: ${(props) => props.theme.colors.gray700};
-	display: flex;
-	justify-content: start;
-	align-items: center;
-	gap: 10px;
+export const LogoSpan =w.span(
+	'max-w-fit text-lg font-black'
+)
 
-	span {
-		font-size: 24px;
-		color: ${(props) => props.theme.colors.gray700};
-	}
+export const NavList = w.span(
+	'group w-full h-12 m-0.5 p-4 leading-4 no-underline rounded-md text-gray-400 flex justify-start items-center gap-2 hover:bg-gray-800 focus:bg-blue-700'
+)
 
-	span:nth-child(2) {
-		font-size: 14px;
-	}
-`;
+export const ListItem = w.span(
+	'text-sm text-gray-700 group-hover:text-white group-focus:text-white'
+)

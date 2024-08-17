@@ -1,24 +1,26 @@
 
-import { NavContainer, LogoContainer, NavListItem  } from "./style"
+import { NavContainer, LogoContainer, NavList, LogoSpan, ListItem } from "./style"
 
 import Logo from '../../assets/logo.png'
+
 function Navigation(){
+
     return(
         <NavContainer>
             <LogoContainer>
                 <img src={Logo}/>
-                <span>Developer Space</span>
+                <LogoSpan>Developer Space</LogoSpan>
             </LogoContainer>
             <nav>
-                <NavListItem href=""><span className="material-symbols-rounded">dashboard</span><span className="text">Dashboard</span></NavListItem>
-                <NavListItem href=""><span className="material-symbols-rounded">calendar_month</span><span className="text">Calendário</span></NavListItem>
-                <NavListItem href=""><span className="material-symbols-rounded">forum</span><span className="text">Chat</span></NavListItem>
-                <NavListItem href=""><span className="material-symbols-rounded">local_mall</span><span className="text">E-Commerce</span></NavListItem>
-                <NavListItem href=""><span className="material-symbols-rounded">mail</span><span className="text">Email</span></NavListItem>
-                <NavListItem href=""><span className="material-symbols-rounded">business_center</span><span className="text">Projetos</span></NavListItem>
-                <NavListItem href=""><span className="material-symbols-rounded">rss_feed</span><span className="text">Social</span></NavListItem>
-                <NavListItem href=""><span className="material-symbols-rounded">folder</span><span className="text">Aquivos</span></NavListItem>
-                <NavListItem href=""><span className="material-symbols-rounded">auto_stories</span><span className="text">Paginas</span></NavListItem>
+                <NavList href=""><ListItem size='sm' className="material-symbols-rounded">dashboard</ListItem><ListItem className="text">Dashboard</ListItem></NavList>
+                <NavList href=""><ListItem size='sm' className="material-symbols-rounded">calendar_month</ListItem><ListItem className="text">Calendário</ListItem></NavList>
+                <NavList href=""><ListItem size='sm' className="material-symbols-rounded">forum</ListItem><ListItem className="text">Chat</ListItem></NavList>
+                <NavList href=""><ListItem size='sm' className="material-symbols-rounded">local_mall</ListItem><ListItem className="text">E-Commerce</ListItem></NavList>
+                <NavList href=""><ListItem size='sm' className="material-symbols-rounded">mail</ListItem><ListItem className="text">Email</ListItem></NavList>
+                <NavList href=""><ListItem size='sm' className="material-symbols-rounded">business_center</ListItem><ListItem className="text">Projetos</ListItem></NavList>
+                <NavList href=""><ListItem size='sm' className="material-symbols-rounded">rss_feed</ListItem><ListItem className="text">Social</ListItem></NavList>
+                <NavList href=""><ListItem size='sm' className="material-symbols-rounded">folder</ListItem><ListItem className="text">Aquivos</ListItem></NavList>
+                <NavList href=""><ListItem size='sm' className="material-symbols-rounded">auto_stories</ListItem><ListItem className="text">Paginas</ListItem></NavList>
         </nav>
         </NavContainer>
     )
