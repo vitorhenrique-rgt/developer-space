@@ -54,7 +54,7 @@ const AuthLogin =  () =>{
 							<label className='text-sm cursor-pointer' htmlFor="remember-me">Lembrar-me</label>
 						</RememberMe>
 						<div>
-							<LinkContent><Link to="/home">Esqueceu a Senha?</Link></LinkContent>
+							<LinkContent><Link to="/forgot-password">Esqueceu a Senha?</Link></LinkContent>
 						</div>
 					</RememberForgot>
 				</AuthInputs>
