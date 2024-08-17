@@ -9,6 +9,7 @@ import CreateAccount from './pages/CreateAccount';
 import { GlobalStyle } from "./styles/globalStyles";
 import { ThemeProvider } from "styled-components";
 import ForgotPassword from "./pages/ForgotPassword";
+import VerificationCode from "./pages/VerificationCode";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
 	<React.StrictMode>
@@ -19,7 +20,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 						<Route path="/" element={<Login/>} />
 						<Route path="/create-account" element={<CreateAccount />} />
 						<Route path="/home" element={<Home />} />
-						<Route path="//forgot-password" element={<ForgotPassword />} />
+						<Route path="/forgot-password" element={<ForgotPassword />} />
+						<Route path="/verification-code" element={<VerificationCode />} />
 					</Routes>
 				</Router>
 		</ThemeProvider>
