@@ -1,11 +1,11 @@
-import { Line, SeparatorContainer, Span } from "./style";
+import { Line, SeparatorContainer, Span } from './style'
 
-const Separator = ()=>{
-	return(
+const Separator = () => {
+	return (
 		<SeparatorContainer>
-			<Line></Line>
+			<Line />
 			<Span>ou</Span>
-			<Line></Line>
+			<Line />
 		</SeparatorContainer>
 	)
 }

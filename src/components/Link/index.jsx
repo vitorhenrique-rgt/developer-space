@@ -1,10 +1,7 @@
-import { Link } from "./style"
+import { Link } from './style'
 
-const LinkContent = ({children}) =>{
-	return(
-		<Link>{children}</Link>
-
-	)
+const LinkContent = ({ children }) => {
+	return <Link>{children}</Link>
 }
 
 export default LinkContent
